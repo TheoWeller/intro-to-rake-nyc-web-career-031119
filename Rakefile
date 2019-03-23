@@ -4,12 +4,12 @@ task :environment do
 end
 
 desc 'outputs hello to the terminal'
-task greeting: do
+task :greeting do
   puts "hello from Rake!"
 end
 
 desc 'outputs hola to the terminal'
-task greeting: do
+task :greeting do
 puts "hola de Rake!"
 end
 
