@@ -16,15 +16,15 @@ desc 'outputs hello to the terminal'
 end
 
 namespace :db do
-task :migrate => :environment do
-Student.create_table
+  task :migrate => :environment do
+    Student.create_table
+  end
+
+  task :seed do
+    require_relative './db/seeds.rb'
+  end
 end
 
-task :seed do
-require_relative './db/seeds.rb'
-end
-end
-
-task :console do
-  Pry.start
+  task :console do
+    Pry.start
 end
