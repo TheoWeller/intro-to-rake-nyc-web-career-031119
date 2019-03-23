@@ -6,3 +6,7 @@ end
 task :hola do
 puts "hola"
 end
+
+task :console do
+  Pry.start
+end
